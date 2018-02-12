@@ -32,14 +32,14 @@
         android:title="Follow on Facebook"
         app:showAsAction="never"/>
 
-    <item
+ <!--   <item
         android:id="@+id/action_twitter2"
         android:title="Follow on Twitter"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_insta2"
         android:title="Follow on Instagram"
-        app:showAsAction="never"/>
+        app:showAsAction="never"/> -->
 
     <item
         android:id="@+id/action_moreapps2"
