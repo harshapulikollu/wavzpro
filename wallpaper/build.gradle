@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 23
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+
+    /****************************
+     * Change the given field below
+     * *************************`**/
+
+    productFlavors {
+         waviepro {
+             applicationId "com.sharkapps.wavzpro" // change package name to something else before uploading to google play
+             resValue "string", "app_name", "Wavz Pro"  // change app name to something else before uploading to google play
+             buildConfigField "boolean", "FULL_VERSION", "true"
+            resValue "string", "admob_full_ad", "" // don't add any ad unit here because this is a paid version.
+             manifestPlaceholders = [appIcon: "@mipmap/ic_launcher2"]
+             versionCode 1
+             versionName "1"
+         }
+    }
+
+
+}
+
+dependencies {
+    final SUPPORT_LIB_VERSION = '24.2.0'
+    final COLOR_PICKER_VERSION = '1.5'
+    final BUTTER_KNIFE_VERSION = '7.0.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.gms:play-services-ads:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.firebase:firebase-jobdispatcher:0.5.2'
+    //noinspection GradleCompatible
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIB_VERSION"
+    compile "com.larswerkman:HoloColorPicker:$COLOR_PICKER_VERSION"
+    compile "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
+    compile project(':library')
+}
+apply plugin: 'com.google.gms.google-services'

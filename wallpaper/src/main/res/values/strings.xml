@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="action_save">Save</string>
+    <string name="btn_set">Set</string>
+    <string name="action_choose_preset">Choose Preset</string>
+    <string name="color_hint">Tap on layer to pick custom color or choose color preset from menu.</string>
+    <string name="toast_permissions_not_granted">Permissions not granted.</string>
+
+    <string-array name="presets">
+        <item>Preset 1</item>
+        <item>Preset 2</item>
+        <item>Preset 3</item>
+        <item>Preset 4</item>
+        <item>Preset 5</item>
+        <item>Preset 6</item>
+        <item>Preset 7</item>
+        <item>Preset 8</item>
+    </string-array>
+
+
+
+
+    <!--Fill the given field-->
+    <string name="facebook_url">http://www.facebook.com/sharkapps</string>
+    <string name="facebookid">sharkapps</string>
+
+    <string name="twitter_url"></string>
+    <string name="twitterid"></string>
+
+    <string name="instagram_url"></string>
+    <string name="instagram_username"></string>
+
+    <string name="googe_play_dev_name">SHARK App Development</string>
+
+
+
+</resources>

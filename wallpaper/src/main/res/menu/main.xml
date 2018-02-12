@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_preset"
+        android:title="@string/action_choose_preset"
+        app:showAsAction="never">
+        <menu />
+    </item>
+
+    <item
+        android:id="@+id/action_save"
+        android:title="Save this preset"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_rate"
+        android:title="Rate this app"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share this app"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_fb"
+        android:title="Follow on Facebook"
+        app:showAsAction="never"/>
+
+   <!-- <item
+        android:id="@+id/action_twitter"
+        android:title="Follow on Twitter"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_insta"
+        android:title="Follow on Instagram"
+        app:showAsAction="never"/> -->
+
+    <item
+        android:id="@+id/action_moreapps"
+        android:title="More Apps"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_pro"
+        android:title="Download Pro"
+        app:showAsAction="never"/>
+</menu>
